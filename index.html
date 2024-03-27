@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <script src="scripts/main.js" defer></script>
     <title>Jake Kaplan's Portfolio</title>
 </head>
 <body>
-    <main>
+    <main id="home">
     
     <!--Navigation-->
-    <nav>
-        <ul>
+    <nav class="containernav">
+
+        <!--Hamburger Menu for mobile-->
+        <div class="hamburgerMenudiv">
+            <img id="hamburgerMenu" src="images/hamburgermenu.png" alt="hamburger menu">
+        </div>
+        
+        <div id="offMenu" class="hamburgermenu">
+            <ul class="menulinks">
+                <li id="closeMenuHome"><a href="#home">Home</a></li>
+                <li id="closeMenuSkills"><a href="#skills">Skills</a></li>
+                <li id="closeMenuMyWork"><a href="#mywork">My Work</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+        </div>
+
+        <!--Desktop nav (hides when in mobile)-->
+        <ul class="mobilehide">
             <li><a class="current" href="index.html">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#mywork">My Work</a></li>
             <li><a href="aboutme.html">About Me</a></li>
         </ul>
 
-        <div>
+        <!--Github and Contact links-->
+        <div class="contactnav">
             <img class="githublogo" src="images/githublogo.png" alt="githublogo">
             <a href="contactme.html">
                 <button class="contactbutton">Contact Me!</button>
@@ -28,7 +46,7 @@
 
     <!--Containter div for container query-->
     <div class="container">
-        <!--Picture-->
+        <!--Profile Picture-->
         <section class="homegrid">
             <div>
                 <h2 class="welcome">Get to Know Me!</h2>
@@ -59,7 +77,9 @@
 
         <!--Skills-->
         <section id="skills" class="skills">
+
             <h3>My Skills</h3>
+
             <div>
                 <img src="images/html5.svg" alt="html5logo">
                 <img src="images/css3.svg" alt="css3logo">
@@ -74,9 +94,9 @@
             </div>
             <div>
                 <img src="images/bootstrap.png" alt="bootstraplogo">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img src="images/bootstrap.png" alt="bootstraplogo">
+                <img src="images/bootstrap.png" alt="bootstraplogo">
+                <img src="images/bootstrap.png" alt="bootstraplogo">
             </div>
             <div>
                 <p>Bootstrap</p>
