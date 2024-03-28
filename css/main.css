@@ -16,6 +16,7 @@ html {
 
 body {
     background-color: var(--background);
+    padding-bottom: 100px;
 }
 
 .container {
@@ -32,7 +33,7 @@ body {
 nav {
     width: 100%;
     height: 75px;
-    line-height: 40px;
+    line-height: 39px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -77,9 +78,23 @@ nav > ul > li > a:hover {
     border-bottom: 2px solid white;
 }
 
+.projectcard > a {
+    color: white;
+    font-family: var(--poppins);
+    font-size: 10pt;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom: 1px solid white;
+}
+
+.projectcard > a:hover {
+    border-bottom: 2px solid white;
+}
+
 /*Titles and Text*/
 
-h1, h2, h3 {
+h1, h2, h3 , h4{
     font-family: var(--poppins);
     font-weight: 400;
     color: white;
@@ -107,9 +122,18 @@ p {
     margin-top: -30px;
 }
 
-.skills > h3 {
+.skills > h2 {
     font-size: 24pt;
     padding-bottom: 100px;
+}
+
+.mywork > h2 {
+    font-size: 24pt;
+    padding-bottom: 75px;
+}
+
+.projectcard > h4 {
+    font-size: 16pt;
 }
 
 /*Images*/
@@ -137,6 +161,13 @@ p {
     height: 100px;
 }
 
+.projectcard > img {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
 /*Boxes*/
 
 .pfpbox {
@@ -150,9 +181,11 @@ p {
 }
 
 .projectcard {
-    width: 325px;
-    height: 100%;
-    border: 3px solid black;
+    width: 350px;
+    height: 600px;
+    background-color: var(--boxes);
+    border: 2px solid white;
+    margin-bottom: -50px;
 }
 
 /*Placement*/
@@ -178,6 +211,19 @@ p {
 
 .skillsgrid > div {
     padding-bottom: 50px;
+}
+
+.mywork {
+    padding-top: 120px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.projectcard > p {
+    padding-bottom: 15px;
+    padding-left: 35px;
+    padding-right: 20px;
+    text-align: left;
 }
 
 /*Buttons*/
@@ -232,6 +278,21 @@ p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.myworkgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    gap: 10%;
+}
+
+.myworkgrid > div {
     margin-left: auto;
     margin-right: auto;
 }
@@ -358,6 +419,10 @@ p {
         left: 0px;
     }
 
+    .projectcard {
+        margin-bottom: -125px;
+    }
+
 
     /*Buttons*/
 
@@ -385,6 +450,17 @@ p {
         width: auto;
         height: auto;
         margin-top: 120px;
+    }
+
+    .skillsgrid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .myworkgrid {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
     }
 
 }
