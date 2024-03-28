@@ -107,6 +107,11 @@ p {
     margin-top: -30px;
 }
 
+.skills > h3 {
+    font-size: 24pt;
+    padding-bottom: 100px;
+}
+
 /*Images*/
 
 .githublogo {
@@ -127,6 +132,11 @@ p {
     pointer-events: none;
 }
 
+.skillsgrid > div > img {
+    width: 100px;
+    height: 100px;
+}
+
 /*Boxes*/
 
 .pfpbox {
@@ -137,11 +147,6 @@ p {
     position: relative;
     top: 12px;
     left: 12px;
-}
-
-.skills > div > img {
-    width: 80px;
-    height: 80px;
 }
 
 .projectcard {
@@ -163,7 +168,16 @@ p {
 .skills {
     text-align: center;
     margin-top: 300px;
-    padding-top: 100px;
+    padding-top: 150px;
+    padding-bottom: 300px;
+}
+
+.skillsgrid > div > p {
+    text-align: center;
+}
+
+.skillsgrid > div {
+    padding-bottom: 50px;
 }
 
 /*Buttons*/
@@ -210,6 +224,14 @@ p {
 }
 
 .homegrid > div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillsgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
