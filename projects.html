@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="scripts/main.js" defer></script>
+    <title>Case Opening App</title>
+</head>
+<body>
+    <main id="home">
+    
+        <!--Navigation-->
+        <nav class="containernav">
+    
+            <!--Hamburger Menu for mobile-->
+            <div class="hamburgerMenudiv">
+                <img id="hamburgerMenu" src="images/hamburgermenu.png" alt="hamburger menu">
+            </div>
+            
+            <div id="offMenu" class="hamburgermenu">
+                <ul class="menulinks">
+                    <li id="closeMenuHome"><a href="index.html">Home</a></li>
+                    <li id="closeMenuSkills"><a href="index.html">Skills</a></li>
+                    <li id="closeMenuMyWork"><a class="current" href="index.html">My Work</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                </ul>
+            </div>
+    
+            <!--Desktop nav (hides when in mobile)-->
+            <ul class="mobilehide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Skills</a></li>
+                <li><a class="current" href="index.html">My Work</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+            </ul>
+    
+            <!--Github and Contact links-->
+            <div class="contactnav">
+                <a href="https://github.com/jekkap/" target="_blank">
+                    <img class="githublogo" src="images/githublogo.png" alt="githublogo">
+                </a>
+                <a class="contactbutton" href="contactme.html">Contact Me!</a>
+            </div>
+        </nav>
+
+        <!--Project Header-->
+        <header class="projectheader">
+            <h1>CSGO Case Opening</h1>
+            <a href="http://jakekaplan.infinityfreeapp.com/ARTDM174/artdm174/project/project4/cases.html">
+                <img class="projectimg" src="images/csgoproject.png" alt="">
+            </a>
+        </header>
+
+        <section class="projectsummary">
+
+            <h2>The Rundown</h2>
+
+            <p>
+                I created this app for the last project of my javascript class in Fall 2023. 
+                This app uses the <a href="https://bymykel.github.io/CSGO-API/" target="_blank">CSGO API</a> 
+                to create a random case opening game. When the "Open Case" button is clicked 
+                a random number is created and is used to locate a specific weapon skin 
+                within the API's files. When the weapon skin is located, the image and name 
+                are grabbed and displayed on the screen to show the used what they unboxed. 
+                After 3 seconds the image and name fade away and the game resets for another 
+                open.
+            </p>
+            <p>
+                In CSGO, these weapon skins are unboxed using keys that can be purchased with 
+                real money. The weapon skin that becomes unboxed will also be worth money, 
+                however, the weapon skin is usually less than what the case was opened for.
+                In each case, there is a rare set of knives that can be unboxed as well which 
+                are valued higher than weapon skins. For my game I decided that a random number 
+                will be generated between 0-50. If the number that has been generated is 50 
+                the user will see a knife displayed, thus making the knife rarer than weapon skins.
+            </p>
+            <p>
+                I learned alot about how API's work through this project and how to navtigate 
+                through them. My main goal with this project was to figure out a way to create 
+                all six cases I used to work on one page rather than making six different HTML 
+                documents. This took alot of time for me to figure out but I eventually got 
+                it working and im glad I did!
+            </p>
+
+            <a class="websitebutton" href="http://jakekaplan.infinityfreeapp.com/ARTDM174/artdm174/project/project4/cases.html" target="_blank">
+                Go To Site
+            </a>
+        </section>
+
+    </main>
+</body>
+</html>

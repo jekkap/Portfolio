@@ -136,6 +136,22 @@ p {
     font-size: 16pt;
 }
 
+.projectheader > h1 {
+    font-size: 28pt;
+}
+
+.projectsummary > p {
+    font-size: 14pt;
+}
+
+.aboutmeheader > h1 {
+    font-size: 28pt;
+}
+
+.aboutme > p {
+    font-size: 13pt;
+}
+
 /*Images*/
 
 .githublogo {
@@ -165,7 +181,20 @@ p {
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    
+}
+
+.projectimg {
+    width: 600px;
+    height: auto;
+    border: 3px solid var(--boxes);
+    border-radius: 10px;
+}
+
+.aboutmeimg {
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;  
 }
 
 /*Boxes*/
@@ -226,35 +255,64 @@ p {
     text-align: left;
 }
 
-/*Buttons*/
-
-.contactbutton {
-    width: 158px;
-    height: 54px;
-    margin-left: 10px;
-    border-radius: 5px;
-    border: 0px;
-    background-color: var(--buttons);
-    color: white;
-    font-family: var(--raleway);
-    font-size: 14pt;
-    font-weight: 500;
-    cursor: pointer;
+.projectheader {
+    margin-top: 110px;
+    text-align: center;
 }
 
-.aboutmebutton {
+.projectsummary {
+    width: 55%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectsummary > h2 {
+    text-align: center;
+}
+
+.aboutmeheader {
+    margin-top: 110px;
+    text-align: center;
+}
+
+.aboutme {
+    width: 45%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Buttons*/
+
+.contactbutton, .aboutmebutton, .websitebutton{
+    display: flex;
     width: 158px;
     height: 54px;
-    margin-top: 45px;
     margin-left: 10px;
     border-radius: 5px;
-    border: 0px;
+    border: 1px;
     background-color: var(--buttons);
     color: white;
     font-family: var(--raleway);
     font-size: 14pt;
     font-weight: 500;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    line-height: 50px;
+}
+
+.websitebutton {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectsummary > p > a {
+    color: white;
 }
 
 /*Grid*/
@@ -368,6 +426,10 @@ p {
         text-align: center;
     }
 
+    .projectsummary > p {
+        font-size: 13pt;
+    }
+
     /*Images*/
 
     .githublogo {
@@ -390,6 +452,11 @@ p {
         cursor: pointer;
         pointer-events: all;
         z-index: 2;
+    }
+
+    .projectimg {
+        width: 300px;
+        height: auto;
     }
 
     /*Boxes*/
@@ -423,7 +490,6 @@ p {
         margin-bottom: -125px;
     }
 
-
     /*Buttons*/
 
     .contactbutton {
@@ -431,6 +497,7 @@ p {
         height: 42px;
         margin-left: 10px;
         font-size: 12pt;
+        line-height: 40px;
     }
 
     .intro > h2, h1 {
@@ -440,6 +507,12 @@ p {
     .aboutmebutton {
         margin-left: 110px;
         margin-top: 0px;
+    }
+
+    /*Placement*/
+
+    .projectsummary {
+        width: 80%;
     }
 
     /*Grid*/
